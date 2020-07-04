@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class TodoList extends Component {
     render() {
-        return <h3>Todo List</h3>
+        return <h3>{this.props.todoItem}</h3>
     }
 }
 

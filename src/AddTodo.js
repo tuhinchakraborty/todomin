@@ -9,16 +9,10 @@ class AddTodo extends Component {
     this.textInput = React.createRef();
   }
 
-  state = {
-      todoText: ""
-  }
-
   handleKeyPress = (target) => {
     if(target.key === 'Enter') {
         const todoText = this.textInput.current.value
-        this.setState({
-            todoText: todoText
-        })
+        this.props.todoText(todoText)
     }
   }
 

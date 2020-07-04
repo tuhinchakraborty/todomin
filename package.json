@@ -2,6 +2,7 @@
   "name": "todomin",
   "version": "0.1.0",
   "private": true,
+  "author": "tuhinchakraborty",
   "main": "public/electron.js",
   "devDependencies": {
     "electron": "^9.0.5",
@@ -11,10 +12,12 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "concurrently": "^5.2.0",
     "electron-is-dev": "^1.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "wait-on": "^5.0.1"
   },
   "scripts": {
     "start": "BROWSER=none react-scripts start",
@@ -23,7 +26,8 @@
     "eject": "react-scripts eject",
     "electron": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "dev": "concurrently \"yarn start\" \"wait-on http://localhost:3000 && yarn electron\""
   },
   "eslintConfig": {
     "extends": "react-app"

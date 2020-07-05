@@ -11,9 +11,16 @@ class AddTodo extends Component {
   }
 
   handleKeyPress = (target) => {
+    var todoList = JSON.parse(localStorage.getItem("todo")) || []
     if (target.key === "Enter") {
       const todoText = this.textInput.current.value;
       this.props.todoText(todoText);
+      const todo = {
+        todoText: todoText,
+        isDone: false,
+      };
+      todoList.push(todo)
+      localStorage.setItem("todo", JSON.stringify(todoList));
     }
   };
 

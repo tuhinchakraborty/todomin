@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class TodoList extends Component {
-    render() {
-        return <h3>{this.props.todoItem}</h3>
-    }
+  render() {
+    return <h3>{localStorage.getItem('todo')}</h3>;
+  }
 }
 
-export default TodoList
+export default TodoList;

@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #1D1D1D;
+}
+
+.Todo-text-section {
+  background-color: #2a2a2a;
+}
+
+.Todo-form-control, .Todo-form-control:focus {
+  background-color: #1D1D1D;
+  border-color: #1D1D1D;
+  color: #898989;
+}

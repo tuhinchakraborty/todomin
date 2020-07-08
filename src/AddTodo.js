@@ -16,6 +16,7 @@ class AddTodo extends Component {
       const todoText = this.textInput.current.value;
       this.props.todoText(todoText);
       const todo = {
+        id: JSON.parse(localStorage.getItem("todo"))?.length || 0,
         todoText: todoText,
         isDone: false,
       };

@@ -4,7 +4,7 @@ import Todo from "./Todo";
 class TodoList extends Component {
   render() {
     const todoItems = JSON.parse(localStorage.getItem("todo"));
-    const todos = todoItems.map((content) => <Todo content={content} />);
+    const todos = todoItems?.map((content) => <Todo key={content.id} content={content} />);
     return(
       <div>
         {todos}

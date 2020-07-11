@@ -1,4 +1,7 @@
-This is a minimalist Todo App written in Electron.
+# TodoMin
+A minimalist Todo App written in Electron.
+
+![TodoMin](assets/screenshot.png)
 
 ## Available Scripts
 

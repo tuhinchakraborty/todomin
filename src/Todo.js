@@ -12,15 +12,21 @@ class Todo extends Component {
           justifyContent: "center",
         }}
       >
-        <Card className="Todo-card">
+        <Card
+          className={this.props.content.isDone ? "Todo-card-done" : "Todo-card"}
+        >
           <Card.Body>
             <Card.Text>{this.props.content.todoText}</Card.Text>
             <div>
               <Button
-                variant="outline-success"
+                variant={
+                  this.props.content.isDone
+                    ? "outline-secondary"
+                    : "outline-success"
+                }
                 onClick={() => this.props.todoDone(this.props.content.id)}
               >
-                Done
+                {this.props.content.isDone ? "Undo" : "Done"}
               </Button>{" "}
               <Button
                 variant="outline-danger"

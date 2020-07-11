@@ -43,6 +43,13 @@ body {
   color: cadetblue;
 }
 
+.Todo-card-done {
+  min-height: 50px;
+  width: 75%;
+  background-color: #1d1d1d;
+  color: cadetblue;
+}
+
 .Card-body {
   align-items: center;
 }

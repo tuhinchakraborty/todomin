@@ -3,25 +3,6 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
 class Todo extends Component {
-  // todoDone = (id) => {
-  //   const originalLocalStorage = JSON.parse(localStorage.getItem("todo"));
-  //   let newLocalStorage = originalLocalStorage
-  //     .filter((item) => item.id === id)
-  //     .map((item) => {
-  //       const obj = Object.assign({}, item);
-  //       obj["isDone"] = true;
-  //       return obj;
-  //     });
-  //   localStorage.setItem("todo", JSON.stringify(newLocalStorage));
-  // };
-
-  // todoCancelled = (id) => {
-  //   const originalLocalStorage = JSON.parse(localStorage.getItem("todo"));
-  //   const index = originalLocalStorage.map((item) => item.id).indexOf(id);
-  //   originalLocalStorage.splice(index, 1);
-  //   localStorage.setItem("todo", JSON.stringify(originalLocalStorage));
-  // };
-
   render() {
     return (
       <div

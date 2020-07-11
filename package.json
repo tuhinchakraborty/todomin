@@ -6,7 +6,8 @@
   "main": "public/electron.js",
   "devDependencies": {
     "electron": "^9.0.5",
-    "electron-builder": "^22.7.0"
+    "electron-builder": "^22.7.0",
+    "uuid": "^8.2.0"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

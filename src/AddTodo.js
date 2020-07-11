@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
+import { v4 as uuidv4 } from 'uuid';
 import "./App.css";
 
 class AddTodo extends Component {
@@ -16,7 +17,7 @@ class AddTodo extends Component {
       const todoText = this.textInput.current.value;
       this.props.todoText(todoText);
       const todo = {
-        id: JSON.parse(localStorage.getItem("todo"))?.length || 0,
+        id: uuidv4(),
         todoText: todoText,
         isDone: false,
       };

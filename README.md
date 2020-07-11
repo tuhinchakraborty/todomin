@@ -8,7 +8,7 @@ In the project directory, you can run:
 To run the app locally
 
 ### `yarn build && yarn dist`
-To package the app into installables
+To package the app into installables. Installable artifacts will be found in the dist/ folder.
 
 ### `yarn test`
 

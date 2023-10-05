@@ -5,7 +5,7 @@
   "author": "tuhinchakraborty",
   "main": "public/electron.js",
   "devDependencies": {
-    "electron": "^9.0.5",
+    "electron": "^22.3.25",
     "electron-builder": "^22.7.0",
     "uuid": "^8.2.0"
   },
